@@ -1,6 +1,7 @@
 <div>
   <a href="/">Home</a>
   <a href="/introduction">Introduction</a>
+  <a href="/database">Database</a>
   @if (Auth::check())
     <a href="/user">User</a>
     @if (Auth::user()->role == 1)

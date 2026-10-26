@@ -1,0 +1,4 @@
+.header a { margin-right: 12px; }
+table.data { border-collapse: collapse; }
+table.data th, table.data td { border: 1px solid #999; padding: 4px 8px; }
+table.data th { background: #eee; }
