@@ -17,3 +17,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('database', [App\Http\Controllers\DatabaseController::class, 'index'])->name('database');
+
+Route::get('contact', [App\Http\Controllers\ContactController::class, 'show'])->name('contact');
+Route::post('contact', [App\Http\Controllers\ContactController::class, 'store']);
+Route::middleware(['auth'])->get('messages', [App\Http\Controllers\MessageController::class, 'index'])->name('messages');

@@ -2,3 +2,9 @@
 table.data { border-collapse: collapse; }
 table.data th, table.data td { border: 1px solid #999; padding: 4px 8px; }
 table.data th { background: #eee; }
+form.contact { max-width: 480px; }
+form.contact label { display: block; margin-top: 10px; }
+form.contact input[type=text], form.contact textarea { width: 100%; padding: 6px; box-sizing: border-box; }
+.error { color: #c00; font-size: 0.9em; }
+.success { color: #060; font-weight: bold; }
+.msg { border-bottom: 1px solid #ccc; padding: 8px 0; }

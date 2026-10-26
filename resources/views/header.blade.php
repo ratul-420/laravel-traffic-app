@@ -2,7 +2,9 @@
   <a href="/">Home</a>
   <a href="/introduction">Introduction</a>
   <a href="/database">Database</a>
+  <a href="/contact">Contact</a>
   @if (Auth::check())
+    <a href="/messages">Messages</a>
     <a href="/user">User</a>
     @if (Auth::user()->role == 1)
       <a href="/admin">Admin</a>
