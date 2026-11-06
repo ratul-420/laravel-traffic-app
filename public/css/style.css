@@ -9,3 +9,5 @@ form.contact input[type=text], form.contact textarea { width: 100%; padding: 6px
 .error { color: #c00; font-size: 0.9em; }
 .success { color: #060; font-weight: bold; }
 .msg { border-bottom: 1px solid #ccc; padding: 8px 0; }
+.hero { text-align: center; padding: 4rem 1rem; margin: 1rem 0 2rem; border-radius: var(--pico-border-radius); background: linear-gradient(135deg, #1e3c72, #2a5298); color: #fff; }
+.hero h1, .hero p { color: #fff; }
