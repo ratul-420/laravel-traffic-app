@@ -17,6 +17,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('database', [App\Http\Controllers\DatabaseController::class, 'index'])->name('database');
+Route::get('graph', [App\Http\Controllers\GraphController::class, 'index'])->name('graph');
 
 Route::get('contact', [App\Http\Controllers\ContactController::class, 'show'])->name('contact');
 Route::post('contact', [App\Http\Controllers\ContactController::class, 'store']);

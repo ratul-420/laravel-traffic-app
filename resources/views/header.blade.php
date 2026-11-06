@@ -6,6 +6,7 @@
     <li><a href="/">Home</a></li>
     <li><a href="/introduction">Introduction</a></li>
     <li><a href="/database">Database</a></li>
+    <li><a href="/graph">Graph</a></li>
     <li><a href="/contact">Contact</a></li>
     @if (Auth::check())
       <li><a href="/messages">Messages</a></li>
