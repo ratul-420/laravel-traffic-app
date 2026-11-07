@@ -22,3 +22,9 @@ Route::get('graph', [App\Http\Controllers\GraphController::class, 'index'])->nam
 Route::get('contact', [App\Http\Controllers\ContactController::class, 'show'])->name('contact');
 Route::post('contact', [App\Http\Controllers\ContactController::class, 'store']);
 Route::middleware(['auth'])->get('messages', [App\Http\Controllers\MessageController::class, 'index'])->name('messages');
+
+Route::middleware(['auth', App\Http\Middleware\AdminOnly::class])->group(function () {
+    Route::resource('crud', App\Http\Controllers\RestrictionController::class)
+        ->except('show')
+        ->parameters(['crud' => 'restriction']);
+});
