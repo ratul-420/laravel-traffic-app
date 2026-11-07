@@ -13,6 +13,7 @@
       <li><a href="/user">User</a></li>
       @if (Auth::user()->role == 1)
         <li><a href="/admin">Admin</a></li>
+        <li><a href="/crud">CRUD</a></li>
       @endif
       <li>
         <form method="post" action="/logout" style="margin:0;">
